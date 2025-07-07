@@ -33,7 +33,8 @@ export default function WhatsAppPage() {
         🎸 Your Perfect Guitar Matches!
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl">
+      <div className="grid grid-cols-2 gap-4 md:gap-6 px-2 sm:px-4">
+
         {guitars.map((guitar, index) => (
           <motion.div
   key={index}
