@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
 
         {/* FOOTER */}
         <footer className="bg-white text-center text-black font-bold py-4">
-          © 2025 Interactive Guitar Match. All rights reserved.
+          © 2025 Music House. All rights reserved.
         </footer>
       </body>
     </html>
