@@ -79,7 +79,7 @@ export default function WhatsAppPage() {
                 alt={guitar.name}
                 width={300}
                 height={300}
-                className="w-full h-full object-cover rounded border-4 border-white"
+                className="w-full h-full object-cover rounded border-2 border-white"
               />
             </div>
 
