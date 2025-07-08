@@ -88,7 +88,7 @@ export default function WhatsAppPage() {
               <h3 className="text-white text-xs font-bold leading-snug">{guitar.name}</h3>
               <p className="text-white text-[10px] leading-tight mt-1 mb-1">{guitar.description}</p>
               <a
-                href={`https://wa.me/91XXXXXXXXXX?text=I'm%20interested%20in%20the%20${encodeURIComponent(guitar.name)}`}
+                href={`https://wa.me/918088835392?text=I'm%20interested%20in%20the%20${encodeURIComponent(guitar.name)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-auto bg-green-600 text-white text-[10px] px-2 py-[4px] rounded-full hover:bg-green-700 transition"
