@@ -81,24 +81,27 @@ export default function WhatsAppPage() {
       <div className="grid grid-cols-2 gap-y-10 gap-x-4 sm:gap-6 px-2 sm:px-4">
         {guitars.map((guitar, index) => (
           <div
-            key={index}
-            className="aspect-[4/5] bg-[#8B4513] rounded-xl shadow-md p-2 flex flex-col justify-between items-center text-center"
-          >
+  key={index}
+  className="bg-[#8B4513] rounded-xl shadow-md p-2 flex flex-col justify-start items-center text-center 
+             aspect-[4/5] lg:aspect-auto lg:h-auto lg:max-w-[220px] w-full mx-auto"
+>
+
             {/* Image */}
-            <div className="w-full h-[100%]">
-              <Image
-                src={guitar.image}
-                alt={guitar.name}
-                width={300}
-                height={300}
-                className="w-full h-full object-cover rounded border-2 border-white"
-              />
-            </div>
+            <div className="w-full h-[140px] lg:h-[250px]">
+  <Image
+    src={guitar.image}
+    alt={guitar.name}
+    width={300}
+    height={300}
+    className="w-full h-full object-cover rounded border-2 border-white"
+  />
+</div>
+
 
             {/* Text */}
-            <div className="flex flex-col justify-between h-[50%] px-2 py-1">
-              <h3 className="text-white text-xs font-bold">{guitar.name}</h3>
-              <p className="text-white text-[10px] mt-1 mb-2 leading-tight">{guitar.description}</p>
+            <div className="flex flex-col h-[50%] px-2 py-1">
+              <h3 className="text-white text-xs font-bold mb-1">{guitar.name}</h3>
+              <p className="text-white text-[10px] leading-tight">{guitar.description}</p>
             </div>
           </div>
         ))}
